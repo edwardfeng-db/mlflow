@@ -2120,6 +2120,7 @@ def get_endpoints(get_handler=get_handler):
         get_service_endpoints(MlflowService, get_handler)
         + get_service_endpoints(ModelRegistryService, get_handler)
         + get_service_endpoints(MlflowArtifactsService, get_handler)
+        + [("/graphql"), _graphql, ["POST"]]
     )
 
 
